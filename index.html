@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Group work</title>
+</head>
+<body>
+
+  <!-- Form with attributes -->
+  <form action="/submit" method="post" target="_blank" enctype="multipart/form-data" autocomplete="on">
+
+    <!-- 3 form elements -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <input type="submit" value="Submit via POST">
+  </form>
+
+  <br>
+
+  <!-- Same form with GET method -->
+  <form action="/search" method="get" target="_self" autocomplete="on">
+
+    <!-- 3 form elements -->
+    <label for="query">Search:</label>
+    <input type="text" id="query" name="q"><br><br>
+
+    <label for="category">Category:</label>
+    <select id="category" name="cat">
+      <option value="books">Books</option>
+      <option value="movies">Movies</option>
+      <option value="music">Music</option>
+    </select><br><br>
+
+    <a href="https://www.youtube.com/watch?v=salY_Sm6mv4" target="_blank">Watch on YouTube</a><br><br>
+
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/salY_Sm6mv4" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+    </iframe>
+
+
+
+    <input type="submit" value="Search via GET">
+  </form>
+
+</body>
+</html>
