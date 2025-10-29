@@ -32,6 +32,16 @@
   </head>
 
   <body>
+    <button id="showPopup">Parādīt uznirstošo logu</button>
+
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <h2>Sveiks, Andri!</h2>
+    <p>Šis ir uznirstošais logs — CSS + JS demo 🎨</p>
+    <button id="closePopup">Aizvērt</button>
+  </div>
+</div>
+
     <i>
       Disclaimer: this is TSI University task for HTML, CSS and SASS workshop,
       not for publishing anywhere on the media. Please include this disclaimer
@@ -338,5 +348,19 @@ body {
     </p>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+  const showBtn = document.getElementById('showPopup');
+  const closeBtn = document.getElementById('closePopup');
+  const popup = document.getElementById('popup');
+
+  showBtn.addEventListener('click', () => {
+    popup.style.display = 'flex';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });
+</script>
+
   </body>
 </html>
