@@ -32,3 +32,71 @@ li {
   font-size: 0.875rem;
   border: #333 1px solid;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Virsraksts */
+h1 {
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+}
+
+/* Teksts */
+p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Poga */
+button {
+  background-color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #ffcc70;
+}
+
+/* Uznirstošais logs */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; /* sākumā slēpts */
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.popup-content button {
+  margin-top: 15px;
+  background-color: #74ebd5;
+  color: #333;
+}
