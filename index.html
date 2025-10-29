@@ -1,54 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Group work</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Form with attributes -->
-  <form action="/submit" method="post" target="_blank" enctype="multipart/form-data" autocomplete="on">
+    <title>A Basic HTML5 Template</title>
+    <meta
+      name="description"
+      content="A simple HTML5 Template for new projects."
+    />
+    <meta name="author" content="SitePoint" />
 
-    <!-- 3 form elements -->
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required><br><br>
+    <meta property="og:title" content="A Basic HTML5 Template" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.sitepoint.com/a-basic-html5-template/"
+    />
+    <meta
+      property="og:description"
+      content="A simple HTML5 Template for new projects."
+    />
+    <meta property="og:image" content="image.png" />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <input type="submit" value="Submit via POST">
-  </form>
+    <link rel="stylesheet" href="./elgars_styles.css" />
+  </head>
 
-  <br>
+  <body>
+    <i>
+      Disclaimer: this is TSI University task for HTML, CSS and SASS workshop,
+      not for publishing anywhere on the media. Please include this disclaimer
+    </i>
 
-  <!-- Same form with GET method -->
-  <form action="/search" method="get" target="_self" autocomplete="on">
+    <h1 class="title">What is Sass? Your guide to this top CSS preprocessor</h1>
 
-    <!-- 3 form elements -->
-    <label for="query">Search:</label>
-    <input type="text" id="query" name="q"><br><br>
+    <i>By Tammy Coron January 10, 2020</i>
 
-    <label for="category">Category:</label>
-    <select id="category" name="cat">
-      <option value="books">Books</option>
-      <option value="movies">Movies</option>
-      <option value="music">Music</option>
-    </select><br><br>
+    <h2>Discover what Sass is, and learn how to start using it.</h2>
 
-    <a href="https://www.youtube.com/watch?v=salY_Sm6mv4" target="_blank">Watch on YouTube</a><br><br>
+    <p>
+      What is Sass? That's the question we here to answer. If you're new to web
+      design, you've probably heard the term floating around, but you might not
+      be quite up to speed with exactly what Sass is, what it does, and whether
+      or not you should be using it. In short, Sass is a CSS preprocessor, which
+      adds special features such as variables, nested rules and mixins
+      (sometimes referred to as syntactic sugar) into regular CSS. The aim is to
+      make the coding process simpler and more efficient. Let's explore in more
+      detail.
+    </p>
 
-    <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/salY_Sm6mv4" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-    </iframe>
+    <p>
+      Article source:
+      <a
+        href="https://www.creativebloq.com/web-design/what-is-sass-111517618"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        https://www.creativebloq.com/web-design/what-is-sass-111517618
+      </a>
+    </p>
 
+    <h3>What is a CSS preprocessor?</h3>
 
+    <p>
+      A CSS preprocessor is a scripting language that extends CSS by allowing
+      developers to write code in one language and then compile it into CSS.
+      Sass is perhaps the most popular preprocessor around right now, but other
+      well-known examples include Less and Stylus.
+    </p>
 
-    <input type="submit" value="Search via GET">
-  </form>
+    <p>
+      Before we go any further, a quick public service announcement is in order:
+      most web designers would say that if you're new to CSS, you're better off
+      avoiding Sass (or any preprocessors, extensions or frameworks) while
+      you're still learning. While it's true they offer many advantages in speed
+      and efficiency, it's important that you really get to grips with the
+      basics of CSS. Make sure you learn the core concepts before you start
+      exploring shortcuts and confusing things.
+    </p>
 
-</body>
+    <h3>What is Sass?</h3>
+
+    <p>Sass is arguably the most useful of all CSS extensions.</p>
+
+    <p>
+      Sass (which stands for 'Syntactically awesome style sheets') is an
+      extension of CSS that enables you to use things like variables, nested
+      rules, inline imports and more. It also helps to keep things organised and
+      allows you to create style sheets faster.
+    </p>
+
+    <p>
+      Sass is compatible with all versions of CSS. The only requirement for
+      using it is that you must have Ruby installed. Users are also asked to
+      follow the Sass Community Guidelines.
+    </p>
+
+    <h3>How to use Sass</h3>
+
+    <p>
+      In the following section, we'll outline some basic tips for using Sass,
+      using examples from the official Sass website. Take a look at the
+      <a
+        href="https://sass-lang.com/documentation"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Sass Documentation</a
+      >
+      for additional references and examples.
+    </p>
+
+    <h4>Syntax</h4>
+
+    <p>Sass includes two syntax options:</p>
+    <ul>
+      <li>
+        SCSS (Sassy CSS): Uses the .scss file extension and is fully compliant
+        with CSS syntax
+      </li>
+      <li>
+        Indented (simply called 'Sass'): Uses .sass file extension and
+        indentation rather than brackets; it is not fully compliant with CSS
+        syntax, but it's quicker to write
+      </li>
+    </ul>
+
+    <p>
+      Note that files can be converted from one syntax to the other using the
+      <code>sass-convert</code> command.
+    </p>
+
+    <h4>Variables</h4>
+
+    <p>
+      Just like other programming languages, Sass allows the use of variables
+      that can store information you can use throughout your style sheet. For
+      example, you can store a colour value in a variable at the top of the
+      file, and then use this variable when setting the colour of your elements.
+      This enables you to quickly change your colours without having to modify
+      each line separately.
+    </p>
+
+    <p>For example:</p>
+
+    <pre><code>
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+  </code></pre>
+
+    <p>The following CSS will be produced:</p>
+
+    <pre><code>
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+  </code></pre>
+
+    <h4>Nesting</h4>
+
+    <p>
+      Nesting is a double-edged sword. While it provides an excellent method for
+      reducing the amount of code you need to write, it can also lead to
+      over-qualified CSS if not executed carefully. The idea is to nest your CSS
+      selectors in such a way as to mimic your HTML hierarchy.
+    </p>
+
+    <p>The following shows a basic navigation style that uses nesting:</p>
+
+    <pre><code>
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+  </code></pre>
+
+    <p>The CSS output is as follows:</p>
+
+    <pre><code>
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+  </code></pre>
+
+    <h4>Partials</h4>
+
+    <p>
+      Partials are smaller Sass files that can be imported (see next section)
+      into other Sass files. Think of partials as code snippets. With these code
+      snippets, your CSS can now be modular and easier to maintain. A partial is
+      designated as such by naming it with a leading underscore:
+      <code>_partial.scss</code>.
+    </p>
+
+    <h4>Import</h4>
+
+    <p>
+      Used with Partials, the <code>@import</code> directive allows you to
+      import your partial files into the current file, to build one single CSS
+      file. Be mindful of how many imports you're using as an HTTP request will
+      be generated for each one.
+    </p>
+
+    <pre><code>
+// _reset.scss
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+// basefile.scss
+@import 'reset';
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+  </code></pre>
+
+    <p>The corresponding CSS output:</p>
+
+    <pre><code>
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+  </code></pre>
+
+    <p>
+      Note: When importing partials, you don't need to include the file
+      extension or the underscore.
+    </p>
+
+    <h4>Mixins</h4>
+
+    <p>
+      One of the advantages of using preprocessors is their ability to take
+      complex, long-winded code and simplify it. This is where mixins come in
+      handy!
+    </p>
+
+    <p>
+      For example, if you need to include the vendor prefixes, you can use a
+      mixin instead. Take a look at this example for border-radius:
+    </p>
+
+    <pre><code>
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.box {
+  @include border-radius(10px);
+}
+  </code></pre>
+
+    <p>The CSS produced:</p>
+
+    <pre><code>
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+  </code></pre>
+
+    <h4>Extend / Inheritance</h4>
+
+    <p>
+      The <code>@extend</code> directive has been called one of Sass' most
+      powerful features. With it, you avoid repeating yourself and let selectors
+      inherit styles from others, keeping code DRY.
+    </p>
+
+    <h4>Operators</h4>
+
+    <p>
+      Sass allows calculations in CSS like addition, subtraction,
+      multiplication, and division, plus functions like percentage(), floor(),
+      and round().
+    </p>
+
+    <hr />
+
+    <p><strong>Tammy Coron</strong></p>
+    <p>
+      Tammy is an independent creative professional and the host of Roundabout:
+      Creative Chaos. She’s also the owner of Just Write Code, an independent
+      production company located in West Tennessee.
+    </p>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
