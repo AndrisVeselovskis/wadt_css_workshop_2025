@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>A Basic HTML5 Template</title>
-    <meta
-      name="description"
-      content="A simple HTML5 Template for new projects."
-    />
-    <meta name="author" content="SitePoint" />
+    <title>WADT CSS Workshop 2025 – Sass Raksts</title>
 
-    <meta property="og:title" content="A Basic HTML5 Template" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://www.sitepoint.com/a-basic-html5-template/"
-    />
-    <meta
-      property="og:description"
-      content="A simple HTML5 Template for new projects."
-    />
-    <meta property="og:image" content="image.png" />
+    <!-- ✅ Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    >
 
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Font Awesome ikonas (nav obligāti, bet glīti) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
 
+    <!-- Tava CSS faila saite -->
     <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="bg-gradient">
+    <div class="container py-5">
+      <div class="text-center mb-4">
+        <button id="showPopup" class="btn btn-warning btn-lg">
+          <i class="fa-solid fa-bell"></i> Parādīt uznirstošo logu
+        </button>
+      </div>
+
+      <div class="card shadow-lg p-4">
+        <i class="text-muted">
+          Disclaimer: this is TSI University task for HTML, CSS and SASS workshop,
+          not for publishing anywhere on the media. Please include this disclaimer
+        </i>
+
+        <h1 class="mt-4 text-center">What is Sass? Your guide to this top CSS preprocessor</h1>
+
+        <i class="d-block text-center mb-3">By Tammy Coron – January 10, 2020</i>
+
+        <h2>Discover what Sass is, and learn how to start using it.</h2>
+        <p>
+          Sass is a CSS preprocessor that adds features such as variables, nested rules
+          and mixins into regular CSS, making coding simpler and more efficient.
+        </p>
+
+        <h3>What is a CSS preprocessor?</h3>
+        <p>
+          A CSS preprocessor extends CSS by allowing developers to write code in one language
+          and compile it into CSS. Sass is the most popular one right now.
+        </p>
+
+        <h3>Variables example:</h3>
+        <pre><code>$primary-color: #333;
+body { color: $primary-color; }</code></pre>
+
+        <h3>Nesting example:</h3>
+        <pre><code>nav {
+  ul { list-style: none; }
+  li { display: inline-block; }
+}</code></pre>
+
+        <hr>
+
+        <p class="text-end"><strong>Tammy Coron</strong></p>
+      </div>
+    </div>
   </head>
 
   <body>
