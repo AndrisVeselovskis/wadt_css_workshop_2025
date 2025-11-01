@@ -1,7 +1,14 @@
 
-.bg-gradient {
-  background: linear-gradient(135deg, #74ebd5, #acb7e5);
+body {
+  background: linear-gradient(90deg, #f5f5dc 0%, #ffffff 25%, #ffffff 75%, #f5f5dc 100%);
   min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .popup {
