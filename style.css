@@ -8,11 +8,6 @@ body {
   line-height: 1.6;
 }
 
-<div id="demo">
-  <h2>Let AJAX change this text</h2>
-  <button type="button" onclick="loadDoc()">Change Content</button>
-</div>
-
 h1, h2, h3, h4 {
   color: #2b2b2b;
 }
